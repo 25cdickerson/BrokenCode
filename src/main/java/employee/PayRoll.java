@@ -9,7 +9,7 @@ public class PayRoll  {
 	public PayRoll() {
 		//super(name, hours, rate);
 		employees = new ArrayList<>();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 
@@ -20,12 +20,11 @@ public class PayRoll  {
     }
 
     public void pay() {
-        double[] pays = new double[employees.size()];
+    	double pays[] = new double[employees.size()];
         int i = 0;
         for (employ employee : employees) {
             pays[i] = (double) employee.getPay();
             i++;
         }
-        System.out.println(Arrays.toString(pays));
     }
 }

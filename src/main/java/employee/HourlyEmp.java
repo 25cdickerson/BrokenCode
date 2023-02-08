@@ -7,12 +7,12 @@ public class HourlyEmp extends employ {
 
     @Override
     public float getPay() {
-        double pay = 0;
+        double payup = 0;
         if (hours <= 40) {
-            pay = rate * hours;
+            payup = rate * hours;
         } else {
-            pay = (40 * rate) + ((hours - 40) * (rate * 1.5));
+            payup = (40 * rate) + ((hours - 40) * (rate * 1.5));
         }
-        return (float) pay;
+        return (float) payup;
     }
 }
