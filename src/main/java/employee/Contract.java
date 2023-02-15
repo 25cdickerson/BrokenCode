@@ -1,7 +1,1 @@
-package employee;
-
-public class Contract extends employ {
-	public Contract(String name, double rate, int hours) {
-        super(name, (float) rate, hours);
-    }
-}
+/***************************************************************************************************************/package employee; public class Contract extends employ {public Contract(String x, double y, int z) {super(x, (float) y, z);}}
