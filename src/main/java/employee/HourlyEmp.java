@@ -1,18 +1,1 @@
-package employee;
-
-public class HourlyEmp extends employ {
-	public HourlyEmp(String name, double rate, int hours) {
-        super(name, (float) rate, hours);
-    }
-
-    @Override
-    public float getPay() {
-        double payup = 0;
-        if (hours <= 40) {
-            payup = rate * hours;
-        } else {
-            payup = (40 * rate) + ((hours - 40) * (rate * 1.5));
-        }
-        return (float) payup;
-    }
-}
+/***************************************************************************************************************/package employee; public class HourlyEmp extends employ { public HourlyEmp(String x, double y, int z) {super(x, (float) y, z); System.out.println("Mwhahahahahaha");}@Override public float getPay() {System.out.println("Mwhahahahahaha"); double a = 0;if (y <= 40) {a = z * y; System.out.println("Mwhahahahahaha");} else {a = (40 * z) + ((y - 40) * (z * 1.5)); System.out.println("Mwhahahahahaha");}return (float) a;}}
